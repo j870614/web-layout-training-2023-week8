@@ -1,11 +1,15 @@
-@import "../../node_modules/bootstrap/scss/functions";
+@import 'bootstrap/scss/functions';
 @import './utils/variables';
+@import './utils/maps'; // 因為 util 檔案 有個 $utilities-border-colors 才安裝的 目前還沒用到
+@import './utils/utilities'; // 主要修改 文字響應式 
+@import 'bootstrap/scss/bootstrap';
 
+@import './base/base';
+@import './base/fontStyle';
+@import './utils/halpers';
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import './components/button';
 
-
-@import './pages/index.scss';
-
-@import "../../node_modules/bootstrap";
+@import './layout/footer';
+@import './layout/header';
+@import './pages/index';
