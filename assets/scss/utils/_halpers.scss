@@ -1,8 +1,20 @@
-.container {
-  max-width: 1296px;
-  margin: 0 auto;
+// 首頁第一個區塊
+.bg-primary-to-black-vertical{
+    background: linear-gradient(180deg, $primary 0%, #11002D 100%);
+} 
+// 左到右 首頁上方兩個section 裡面的長條 bar
+.bg-primary-to-black-horizontal{
+    background: linear-gradient(90deg, $primary 0%, #11002D 100%);
+} 
+.bg-black-to-purple-radial{
+    background: radial-gradient(#28085C 0%, $black 100%);
 }
 
-.mr-16 {
-  margin-right: 64px;
+.bg-purple-to-black-radial{
+    background: radial-gradient($black 0%, #28085C 100%);
+}
+
+// 字重
+.fw-900{
+    font-weight: 900;
 }

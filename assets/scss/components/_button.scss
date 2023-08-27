@@ -1,0 +1,26 @@
+// 產品透明按鈕
+.btn-pill{
+    color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 4px 16px;
+    font-size: 16px;
+    background: transparent;
+    &.active{
+        color: $black;
+        background: white;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .btn-pill{
+        padding: 4px 80px;
+        font-size: 24px;
+        &:hover{
+            color: $primary;
+            background: white;
+            border: 1px solid white;
+        }
+    }
+}
+

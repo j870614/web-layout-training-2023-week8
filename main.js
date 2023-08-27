@@ -1,4 +1,4 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
-
-console.log("Hello world!");
+// 載入google font
+import 'material-icons/iconfont/material-icons.css';
