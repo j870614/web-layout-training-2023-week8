@@ -214,31 +214,43 @@
       </div>
       <span class="bg-text">ALPHABOX+</span>
     </section>
-    
-    <div class="bg-primary-to-black-vertical py-100 text-white container">
-      <h2>主要改了什麼內容?</h2>
-      <ul class="font-noto-sans">
-        <li>已安裝 google icon</li>
-        <li>varible.scss 有修改的內容 我註記了 客製化 搜尋 客製化 三個關鍵字可以了解哪些地方有更改</li>
-        <li>英文全部設定 .shrikhand 中文則是 .noto-sans 設計稿不是每個英文字都是 .shrikhand 可以自行添加.noto-sans </li>
-        <li>文字可以使用響應式斷點 .fs-3 是手機格式 .fs-lg-4 是桌機</li>
-      </ul>
-      <h2 class="fs-lg-48 fs-4">.bg-primary-to-black-vertical 首頁第一個區塊 上到下漸層</h2>
-    </div>
-    <div class="bg-primary-to-black-horizontal py-100 text-white container">
-      <h2>.bg-primary-to-black-horizontal 左到右 首頁上方兩個section 裡面的長條 bar</h2>
-    </div>
-    <div class="bg-black-to-purple-radial py-100 text-white container font-noto-sans">
-      <h2 class="fw-900">輻射中心外層黑中心紫 思源黑體 ALPHABOX+</h2>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptates voluptatibus ad delectus aperiam beatae similique, deserunt blanditiis minus architecto sit deleniti pariatur, tenetur vel doloremque amet soluta quo corrupti.
-    </div>
-    </div>
-   
+    <section class="bg-darkPurple py-lg-144 pt-60 pb-80 text-white fw-bold">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-12">
+            <h2 class="fs-lg-48 fs-40 ls-lg-48-sm-40 fw-bold mb-lg-20 mb-12">聯絡我們</h2>
+            <span class="material-icons fs-12 me-1">
+              fiber_manual_record
+            </span>
+            <span class="bg-white d-inline-block badge rounded-line"></span>
+            <p class="mt-lg-54 mt-36 mb-1">讓科技成為您的最佳夥伴</p>
+            <p class="mb-0">立即體驗神奇功能並享限時優惠！</p>
+          </div>
+          <div class="col-lg-7 col-12">
+            <span class="material-icons fs-80 lh-1 mb-lg-4 mb-3">
+              emergency
+            </span>
+            <form class="row gy-3">
+              <div class="col-12">
+                <input type="email" class="form-control rounded-0" placeholder="EMAIL">
+              </div>
+              <div class="col-12">
+                <textarea cols="30" rows="5" class="form-control rounded-0"  placeholder="COMMENTS"></textarea>
+              </div>
+              <div class="col-lg-7 ms-auto">
+                <button type="submit" class="btn btn-primary w-100">
+                  <img src="../assets/images/point_scan.svg" alt="十字圖示" class="me-1">
+                  <span>送出</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+       
+      </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
-    <script>
-      
-    </script>
   </body>
 </html>

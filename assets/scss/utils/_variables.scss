@@ -391,8 +391,10 @@ $spacers: (
   20: 20px,
   28: 28px,
   32: 32px,
+  36: 36px,
   40: 40px,
   52: 52px,
+  54: 54px,
   56: 56px,
   60: 60px,
   64: 64px,
@@ -402,6 +404,7 @@ $spacers: (
   96: 96px,
   120: 120px,
   136: 136px,
+  144: 144px,
   151: 151px,
   160: 160px,
   184: 184px,
@@ -520,7 +523,7 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
+$border-radius:               .375rem !default; 
 $border-radius-sm:            .25rem !default;
 $border-radius-lg:            .5rem !default;
 $border-radius-xl:            1rem !default;
@@ -614,6 +617,7 @@ $font-sizes: (
   5: $h5-font-size, // 20px
   6: $h6-font-size, // 16px
   8: 8px,
+  12: 12px,
   48: 48px,
   64: 64px,
   80: 80px,
@@ -809,7 +813,7 @@ $btn-link-hover-color:        var(--#{$prefix}link-hover-color) !default;
 $btn-link-disabled-color:     $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           $border-radius !default;
+$btn-border-radius:           4px !default; // $border-radius !default; // 客製化 大部分按鈕都是4px
 $btn-border-radius-sm:        $border-radius-sm !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
 

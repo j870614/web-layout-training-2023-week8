@@ -1,0 +1,9 @@
+.rounded-line{
+    width: 124px; 
+    height: 8px;
+}
+@include media-breakpoint-up(xl) {
+    .rounded-line{
+        height: 12px;
+    }
+}
