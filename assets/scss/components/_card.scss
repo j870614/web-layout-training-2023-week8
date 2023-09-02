@@ -1,0 +1,10 @@
+// 紫色白色的card
+.card-square{
+    height: 351px;
+}
+
+@include media-breakpoint-up(xl) {
+    .card-square{
+        height: 416px;
+    }
+}

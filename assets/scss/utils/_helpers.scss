@@ -18,3 +18,19 @@
 .fw-900{
     font-weight: 900;
 }
+
+// 字距
+.ls-lg-48-sm-40{
+    letter-spacing: 40px;
+}
+.scroll-none{
+    overflow: hidden;
+}
+
+@include media-breakpoint-up(xl) {
+    // 字距
+    .ls-lg-48-sm-40{
+        letter-spacing: 48px;
+    }
+
+}

@@ -6,9 +6,12 @@
 
 @import './base/base';
 @import './base/fontStyle';
-@import './utils/halpers';
+@import './utils/helpers';
 
 @import './components/button';
+@import './components/card';
+@import './components/backgroundText';
+@import './components/swiper';
 
 @import './layout/footer';
 @import './layout/header';
