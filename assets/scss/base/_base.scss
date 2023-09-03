@@ -13,5 +13,12 @@ img{
 a {
 	text-decoration:none;
   display: inline-block;
-  color: white;  
+  color: $black;  
 } 
+
+// 輸入框
+::placeholder{
+  color: #1F0F39 !important;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: bold;
+}

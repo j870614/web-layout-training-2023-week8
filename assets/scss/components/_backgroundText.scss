@@ -1,0 +1,14 @@
+.bg-text{
+    font-size: 128px;
+    color: rgba(255, 255, 255, 0.04);
+    position: absolute;
+    bottom: -3.4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@include media-breakpoint-up(xl) {
+    .bg-text{
+        font-size: 400px;
+        bottom: -230px;
+    }
+}

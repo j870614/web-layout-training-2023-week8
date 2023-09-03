@@ -8,35 +8,292 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <div class="bg-primary-to-black-vertical py-100 text-white container">
-      <h2>主要改了什麼內容?</h2>
-      <ul class="font-noto-sans">
-        <li>已安裝 google icon</li>
-        <li>varible.scss 有修改的內容 我註記了 客製化 搜尋 客製化 三個關鍵字可以了解哪些地方有更改</li>
-        <li>英文全部設定 .shrikhand 中文則是 .noto-sans 設計稿不是每個英文字都是 .shrikhand 可以自行添加.noto-sans </li>
-        <li>文字可以使用響應式斷點 .fs-3 是手機格式 .fs-lg-4 是桌機</li>
-      </ul>
-      <h2 class="fs-lg-48 fs-4">.bg-primary-to-black-vertical 首頁第一個區塊 上到下漸層</h2>
-    </div>
-    <div class="bg-primary-to-black-horizontal py-100 text-white container">
-      <h2>.bg-primary-to-black-horizontal 左到右 首頁上方兩個section 裡面的長條 bar</h2>
-    </div>
-    <div class="bg-black-to-purple-radial py-100 text-white container font-noto-sans">
-      <h2 class="fw-900">輻射中心外層黑中心紫 思源黑體 ALPHABOX+</h2>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptates voluptatibus ad delectus aperiam beatae similique, deserunt blanditiis minus architecto sit deleniti pariatur, tenetur vel doloremque amet soluta quo corrupti.
-    </div>
-    </div>
-    <div class="bg-purple-to-black-radial py-100 text-white container">
-      <h2 class="fw-900">輻射中心外層紫中心黑</h2>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis temporibus quo corporis, perferendis veniam aliquam deserunt distinctio ullam alias ab laborum libero, animi blanditiis id aliquid rem deleniti eos soluta.
-      <button type="button" class="btn-pill active">測試用</button>
-      <span class="material-icons">
-        account_circle
+    <section class="scroll-none bg-purple-to-black-radial pt-lg-160 pb-lg-40 pt-60 pb-80 text-white position-relative">
+      <div class="container">
+        <div class="d-lg-flex align-items-center mb-3">
+          <h2 class="fs-lg-48 fs-1 mb-0 me-lg-214 fw-bold ls-lg-48-sm-40">使用分享</h2>
+          <span class="fw-bold d-lg-block d-none">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</span>
+        </div>
+        <span class="font-noto-sans d-flex align-items-center mb-lg-40 mb-4">01
+          <span class="material-icons mx-1">
+            horizontal_rule
+          </span>
+          04</span>
+       
+        <p class="fw-bold d-lg-none mb-4">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+              
+        <span class="material-icons fs-80 lh-1 mb-4">
+          emergency
         </span>
-        <span class="material-icons">pie_chart</span>
+        <div class="row row-cols-1 font-noto-sans fw-bold gy-4 d-lg-none">
+          <div class="col">
+            <div class="card-square bg-secondary d-flex flex-column">
+              <h3 class="fs-6 font-noto-sans fw-bold mb-32">
+                Zona
+                <span class="material-icons fs-8 lh-1 mx-2">
+                  fiber_manual_record
+                </span> 
+                Taipei
+              </h3>
+              <p>ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+              
+              <div class="mt-auto d-flex align-items-center">
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span>ALPHABOX+ Dianne</span>
+              </div>
+            </div>
+          </div>
+          <div class="col text-dark">
+            <div class="card-square bg-white d-flex flex-column">
+              <h3 class="fs-6 font-noto-sans fw-bold mb-32">
+                Lin 
+                <span class="material-icons fs-8 lh-1 mx-2">
+                  fiber_manual_record
+                </span> 
+                Chiayi
+              </h3>
+              <p>非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+              
+              <div class="mt-auto d-flex align-items-center">
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span>ALPHABOX+ Felix</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-square bg-secondary d-flex flex-column">
+              <h3 class="fs-6 font-noto-sans fw-bold mb-32">
+                云
+                <span class="material-icons fs-8 lh-1 mx-2">
+                  fiber_manual_record
+                </span> 
+                Taipei
+              </h3>
+              <p>我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！</p>
+              
+              <div class="mt-auto d-flex align-items-center">
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span>ALPHABOX+ Dianne</span>
+              </div>
+            </div>
+          </div>
+          <div class="col text-dark">
+            <div class="card-square bg-white d-flex flex-column">
+              <h3 class="fs-6 font-noto-sans fw-bold mb-32">
+                Zichi 
+                <span class="material-icons fs-8 lh-1 mx-2">
+                  fiber_manual_record
+                </span> 
+                Kaohsiung
+              </h3>
+              <p>讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+              
+              <div class="mt-auto d-flex align-items-center">
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span>ALPHABOX+ Vito</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper d-lg-block d-none">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide fw-bold bg-secondary p-40 d-flex flex-column">
+              <h3 class="fs-6 font-noto-sans fw-bold mb-32">
+                Zona
+                <span class="material-icons fs-8 lh-1 mx-2">
+                  fiber_manual_record
+                </span> 
+                Taipei
+              </h3>
+              <p>ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+              
+              <div class="mt-auto">
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="font-noto-sans">ALPHABOX+ Dianne</span>
+              </div>
+            </div>
+            <div class="swiper-slide fw-bold bg-white p-40 text-dark  d-flex flex-column">
+              <h3 class="fs-6 font-noto-sans fw-bold mb-32">
+                Lin
+                <span class="material-icons fs-8 lh-1 mx-2">
+                  fiber_manual_record
+                </span> 
+                Chiayi
+              </h3>
+              <p>非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+              <div class="mt-auto">
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="font-noto-sans">ALPHABOX+ Felix</span>
+              </div>
+            </div>
+            <div class="swiper-slide fw-bold bg-secondary p-40 d-flex flex-column">
+              <h3 class="fs-6 font-noto-sans fw-bold mb-32">
+                云
+                <span class="material-icons fs-8 lh-1 mx-2">
+                  fiber_manual_record
+                </span> 
+                Taipei
+              </h3>
+              <p>我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！</p>
+              
+              <div class="mt-auto">
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="font-noto-sans">ALPHABOX+ Dianne</span>
+              </div>
+             
+            </div>
+            <div class="swiper-slide fw-bold bg-white p-40 text-dark d-flex flex-column">
+              <h3 class="fs-6 font-noto-sans fw-bold mb-32">
+                Zichi
+                <span class="material-icons fs-8 lh-1 mx-2">
+                  fiber_manual_record
+                </span> 
+                Kaohsiung
+              </h3>
+              <p>讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+              
+              <div class="mt-auto">
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="material-icons fs-6 lh-1 me-3">
+                  fiber_manual_record
+                </span> 
+                <span class="font-noto-sans">ALPHABOX+ Vito</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="row mt-lg-n3">
+          <div class="col-8"></div>
+          <div class="col-4">
+            <span class="font-noto-sans fw-bold  d-none d-lg-block">SCROLL</span>
+          </div>
+        </div>
+        <p class="pt-136 mb-0 fw-bold d-none d-lg-block">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
+      </div>
+      <span class="bg-text">ALPHABOX+</span>
+    </section>
+    <section class="bg-darkPurple py-lg-144 pt-60 pb-80 text-white fw-bold">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-12">
+            <h2 class="fs-lg-48 fs-40 ls-lg-48-sm-40 fw-bold mb-lg-20 mb-12">聯絡我們</h2>
+            <span class="material-icons fs-12 me-1">
+              fiber_manual_record
+            </span>
+            <span class="bg-white d-inline-block badge rounded-line"></span>
+            <p class="mt-lg-54 mt-36 mb-1">讓科技成為您的最佳夥伴</p>
+            <p class="mb-0">立即體驗神奇功能並享限時優惠！</p>
+          </div>
+          <div class="col-lg-7 col-12">
+            <span class="material-icons fs-80 lh-1 mb-lg-4 mb-3">
+              emergency
+            </span>
+            <form class="row gy-3">
+              <div class="col-12">
+                <input type="email" class="form-control rounded-0" placeholder="EMAIL">
+              </div>
+              <div class="col-12">
+                <textarea cols="30" rows="5" class="form-control rounded-0"  placeholder="COMMENTS"></textarea>
+              </div>
+              <div class="col-lg-7 ms-auto">
+                <button type="submit" class="btn btn-primary w-100">
+                  <img src="../assets/images/point_scan.svg" alt="十字圖示" class="me-1">
+                  <span>送出</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+       
+      </div>
+    </section>
 
-    </div>
+    <section class="container-fluid">
+      <div class="row row-cols-2 row-cols-lg-4 text-white">
+        <div class="col card-robot text-center position-relative bg-cover " style="background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_vertical.png?raw=true');">
+          <div class="position-absolute bg-mask w-100 h-100 top-0 start-50 translate-middle-x pt-4 pb-lg-56 pb-4 px-lg-40 px-12" >
+            <h2 class="font-saira fs-lg-400 fs-128 mb-lg-20 mb-3">1</h2>
+            <h3 class="fs-lg-2 fs-4 mb-lg-80 mb-3">Diane</h3>
+            <p class="mb-0 text-start fw-bold">知識型</p>
+            <div class="d-lg-flex">
+              <p class="mb-0 text-start">學術領導/知識分享/智能問答</p>
+              <img src="../assets/images/line_end_arrow_notch.svg" class="ms-auto"  alt="箭頭圖示">
+            </div>
+          </div>
+        </div>
+        <div class="col card-robot text-center position-relative bg-cover " style="background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true');">
+          <div class="position-absolute bg-mask w-100 h-100 top-0 start-50 translate-middle-x pt-4 pb-lg-56 pb-4 px-lg-40 px-12" >
+            <h2 class="font-saira fs-lg-400 fs-128 mb-lg-20 mb-3">2</h2>
+            <h3 class="fs-lg-2 fs-4 mb-lg-80 mb-3">Felix</h3>
+            <p class="mb-0 text-start fw-bold">娛樂型</p>
+            <div class="d-lg-flex">
+              <p class="mb-0 text-start">音樂播放/語音互動/遊戲陪伴</p>
+              <img src="../assets/images/line_end_arrow_notch.svg" class="ms-auto"  alt="箭頭圖示">
+            </div>
+          </div>
+        </div>
+        <div class="col card-robot text-center position-relative bg-cover " style="background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_verticalgle.png?raw=true');">
+          <div class="position-absolute bg-mask w-100 h-100 top-0 start-50 translate-middle-x pt-4 pb-lg-56 pb-4 px-lg-40 px-12" >
+            <h2 class="font-saira fs-lg-400 fs-128 mb-lg-20 mb-3">3</h2>
+            <h3 class="fs-lg-2 fs-4 mb-lg-80 mb-3">Karina</h3>
+            <p class="mb-0 text-start fw-bold">生活型</p>
+            <div class="d-lg-flex">
+              <p class="mb-0 text-start">健康提醒/日程安排/智能家居</p>
+              <img src="../assets/images/line_end_arrow_notch.svg" class="ms-auto"  alt="箭頭圖示">
+            </div>
+          </div>
+        </div>
+        <div class="col card-robot text-center position-relative bg-cover " style="background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_vertical.png?raw=true');">
+          <div class="position-absolute bg-mask w-100 h-100 top-0 start-50 translate-middle-x pt-4 pb-lg-56 pb-4 px-lg-40 px-12" >
+            <h2 class="font-saira fs-lg-400 fs-128 mb-lg-20 mb-3">4</h2>
+            <h3 class="fs-lg-2 fs-4 mb-lg-80 mb-3">Vito</h3>
+            <p class="mb-0 text-start fw-bold">情感型</p>
+            <div class="d-lg-flex">
+              <p class="mb-0 text-start">情感識別/心情分析/心靈支持</p>
+              <img src="../assets/images/line_end_arrow_notch.svg" class="ms-auto"  alt="箭頭圖示">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
