@@ -11,6 +11,21 @@
         background: white;
     }
 }
+// 箭頭按鈕
+.btn-arrow-left{
+    &:hover{
+        img{
+            content: url('../images/leftArrow_hover.svg');
+        }
+    }
+}
+.btn-arrow-right{
+    &:hover{
+        img{
+            content: url('../images/rightArrow_hover.svg');
+        }
+    }
+}
 
 @include media-breakpoint-up(lg) {
     .btn-pill{

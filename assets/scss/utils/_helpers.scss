@@ -34,6 +34,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.object-fit-cover{
+    object-fit:cover;
+}
+
 @include media-breakpoint-up(xl) {
     // 字距
     .ls-lg-48-sm-40{
