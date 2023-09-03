@@ -1,10 +1,33 @@
 // 紫色白色的card
 .card-square{
     height: 351px;
+    padding: 24px;
+}
+
+// 首頁區塊6 機器人
+.card-robot{
+    height: 406px;
+    .bg-mask{
+        background: rgba(0, 0, 0, 0.50);
+    }
 }
 
 @include media-breakpoint-up(xl) {
     .card-square{
         height: 416px;
+        padding: 40px;
+    }
+
+    .card-robot{
+        height: 876px;
+        .bg-mask{
+            background: $black;
+            transition: all .3s ease-in-out;
+        }
+        &:hover{
+            .bg-mask{
+                background: rgba(0, 0, 0, 0.50);
+            }
+        }
     }
 }
