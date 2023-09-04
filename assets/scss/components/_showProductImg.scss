@@ -1,0 +1,17 @@
+.js-product-img{
+    transition: all .3s ease-in-out;
+}
+
+// 文字淡入淡出
+@keyframes fade{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+.fade-animation{
+    animation: fade ease .3s;
+}

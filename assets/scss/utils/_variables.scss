@@ -402,14 +402,19 @@ $spacers: (
   80: 80px,
   88: 88px,
   96: 96px,
+  104: 104px,
   120: 120px,
   127: 127px,
   136: 136px,
   144: 144px,
   151: 151px,
+  158: 158px,
   160: 160px,
   184: 184px,
   214: 214px,
+  216: 216px,
+  321: 321px,
+  404: 404px,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -619,6 +624,8 @@ $font-sizes: (
   6: $h6-font-size, // 16px
   8: 8px,
   12: 12px,
+  22: 22px,
+  40: 40px,
   48: 48px,
   64: 64px,
   80: 80px,
@@ -1039,10 +1046,11 @@ $form-file-button-hover-bg:       shade-color($form-file-button-bg, 5%) !default
 // scss-docs-end form-file-variables
 
 // scss-docs-start form-floating-variables
+// 客製化
 $form-floating-height:            add(3.5rem, $input-height-border) !default;
 $form-floating-line-height:       1.25 !default;
-$form-floating-padding-x:         $input-padding-x !default;
-$form-floating-padding-y:         1rem !default;
+$form-floating-padding-x:         16px; // $input-padding-x !default;
+$form-floating-padding-y:         8px; // 1rem !default;
 $form-floating-input-padding-t:   1.625rem !default;
 $form-floating-input-padding-b:   .625rem !default;
 $form-floating-label-opacity:     .65 !default;

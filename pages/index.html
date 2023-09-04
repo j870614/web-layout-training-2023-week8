@@ -8,6 +8,7 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
+
     <section class="scroll-none bg-purple-to-black-radial pt-lg-160 pb-lg-40 pt-60 pb-80 text-white position-relative">
       <div class="container">
         <div class="d-lg-flex align-items-center mb-3">
@@ -226,13 +227,21 @@
             <span class="material-icons fs-80 lh-1 mb-lg-4 mb-3">
               emergency
             </span>
-            <form class="row gy-3">
+
+            <form class="row gy-3 text-dark font-noto-sans fs-lg-5 text-darkPurple">
               <div class="col-12">
-                <input type="email" class="form-control rounded-0" placeholder="EMAIL">
+                <div class="form-floating">
+                  <input type="email" class="input-contact form-control rounded-0" id="email" placeholder="name@example.com">
+                  <label for="email" class="lh-sm">EMAIL</label>
+                </div>
               </div>
               <div class="col-12">
-                <textarea cols="30" rows="5" class="form-control rounded-0"  placeholder="COMMENTS"></textarea>
+                <div class="form-floating">
+                  <textarea class="form-control rounded-0" placeholder="COMMENTS" id="comments" style="height: 120px"></textarea>
+                  <label for="comments" class="lh-sm">Comments</label>
+                </div>
               </div>
+
               <div class="col-lg-7 ms-auto">
                 <button type="submit" class="btn btn-primary w-100">
                   <img src="../assets/images/point_scan.svg" alt="十字圖示" class="me-1">
@@ -242,10 +251,8 @@
             </form>
           </div>
         </div>
-       
       </div>
     </section>
-
     <section class="container-fluid">
       <div class="row row-cols-2 row-cols-lg-4 text-white">
         <div class="col card-robot text-center position-relative bg-cover " style="background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_vertical.png?raw=true');">

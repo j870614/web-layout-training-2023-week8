@@ -9,7 +9,6 @@
 .bg-black-to-purple-radial{
     background: radial-gradient(#28085C 0%, $black 100%);
 }
-
 .bg-purple-to-black-radial{
     background: radial-gradient($black 0%, #28085C 100%);
 }
@@ -27,13 +26,12 @@
 .scroll-none{
     overflow: hidden;
 }
-.z-index-1{
-    z-index:1;
-}
+
 .bg-cover{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 @include media-breakpoint-up(xl) {
     // 字距
     .ls-lg-48-sm-40{

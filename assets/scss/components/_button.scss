@@ -9,6 +9,15 @@
     &.active{
         color: $black;
         background: white;
+        pointer-events: none;
+    }
+}
+
+// 箭頭按鈕
+.btn-arrow-left, .btn-arrow-right{
+    img{
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -20,6 +29,28 @@
             color: $primary;
             background: white;
             border: 1px solid white;
+        }
+    }
+
+    // 箭頭按鈕
+    .btn-arrow-left, .btn-arrow-right{
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .btn-arrow-left{
+        &:hover{
+            img{
+                content: url('../images/leftArrow_hover.svg');
+            }
+        }
+    }
+    .btn-arrow-right{
+        &:hover{
+            img{
+                content: url('../images/rightArrow_hover.svg');
+            }
         }
     }
 }

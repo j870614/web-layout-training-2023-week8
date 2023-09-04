@@ -1,7 +1,4 @@
-// 相關 reset 設定 bootstrap 已經有了 因此刪除
-
 *, *::before, *::after{
-  // 設計稿都是 1.5 行高 在body寫不知道為甚麼沒用
   line-height: 1.5 !important;
 }
 
@@ -15,10 +12,3 @@ a {
   display: inline-block;
   color: $black;  
 } 
-
-// 輸入框
-::placeholder{
-  color: #1F0F39 !important;
-  font-family: 'Noto Sans TC', sans-serif;
-  font-weight: bold;
-}
