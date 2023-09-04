@@ -8,12 +8,13 @@
 @import './base/fontStyle';
 @import './utils/helpers';
 
+@import './components/arrow';
+@import './components/backgroundText';
 @import './components/button';
 @import './components/card';
-@import './components/backgroundText';
-@import './components/swiper';
 @import './components/roundedLine';
-@import './components/arrow';
+@import './components/showProductImg';
+@import './components/swiper';
 
 @import './layout/footer';
 @import './layout/header';

@@ -5,47 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <style>
-    
-    </style>
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
     <section class="bg-dark">
-      <div class="container text-center py-3">
-        <button type="button" class="btn-pill me-4">Diane</button>
-        <button type="button" class="btn-pill me-4">Felix</button>
-        <button type="button" class="btn-pill me-4">Karina</button>
+      <div class="js-btn-list container py-3 d-flex justify-content-between justify-content-lg-center container-fluid">
+        <button type="button" class="btn-pill me-lg-4 active">Diane</button>
+        <button type="button" class="btn-pill me-lg-4">Felix</button>
+        <button type="button" class="btn-pill me-lg-4">Karina</button>
         <button type="button" class="btn-pill">Vito</button>
       </div>
-      <div class="container-fluid text-white position-relative">
-        <div class="row">
-          <div class="col bg-cover" style="background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true');">
-            <div class="px-3 h-100 d-flex align-items-center justify-content-between">
-              <a href="#" class="btn-arrow-left">
+      <div class="text-white position-relative">
+        <div class="row row-cols-1 row-cols-lg-2 gx-0">
+          <div class="col bg-cover js-product-img py-158 py-lg-0" style="background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true');">
+            <div class="px-lg-1 h-100 d-flex align-items-center justify-content-between js-arrow-btns">
+              <a href="#" class="btn btn-arrow-left border-0 disabled">
                 <img src="../assets//images/leftArrow.svg" alt="往左箭頭圖示">
               </a>
-              <a href="#" class="btn-arrow-right">
+              <a href="#" class="btn btn-arrow-right border-0">
                 <img src="../assets//images/rightArrow.svg" alt="往右箭頭圖示">
               </a>
             </div>
           </div>
-        
           <div class="col">
-            <div class="px-40 pt-321 pb-404">
-              <h2 class="fs-64">Diane</h2>
+            <div class="px-lg-40 px-12 pt-lg-321 pb-lg-404 py-3 js-product-content">
+              <h2 class="fs-lg-64 fs-1 mb-lg-4 mb-0">Diane</h2>
               <p class="mb-0 fw-bold">知識型</p>
-              <p>學術領導/知識分享/智能問答</p>
-              <img src="../assets/images/line_end_arrow_notch.svg" class="object-fit-cover arrow" alt="箭頭圖示">
+              <p class="mb-lg-3 mb-2">學術領導/知識分享/智能問答</p>
+              <img src="../assets/images/line_end_arrow_notch.svg" class="long-arrow" alt="箭頭圖示">
             </div>
           </div>
         </div>
 
-        <!-- bottom: 5%; -->
-        <img src="../assets/images/Linked Path Group.png" alt="圓圈箭頭" style="width: 196px;" class="position-absolute start-50 bottom-0 translate-middle-x mb-60">
+        <div class="text-center">
+          <img src="../assets/images/circle.png" alt="圓圈箭頭" class="arrow-circle">
+        </div>
 
-        <span class="material-icons-outlined fs-40 position-absolute start-50 translate-middle-x" style="bottom: 14%;">
+        <span class="material-icons-outlined fs-lg-40 fs-22 down-arrow">
           arrow_downward
         </span>
       </div>
@@ -173,5 +170,107 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script>
+      const btnList = document.querySelector('.js-btn-list');
+      const btns = btnList.querySelectorAll('*');
+      const btnLeftArrow = document.querySelector('.btn-arrow-left');
+      const btnRightArrow = document.querySelector('.btn-arrow-right');
+      const productImg = document.querySelector('.js-product-img');
+      const productContent = document.querySelector('.js-product-content');
+
+      const robotData = [
+        {
+          name: 'Diane',
+          type: '知識型',
+          function: '學術領導/知識分享/智能問答',
+          url1: 'https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true',
+          url2: 'https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square2.png?raw=true'
+        },
+        {
+          name: 'Felix',
+          type: '娛樂型',
+          function: '音樂播放/語音互動/遊戲陪伴',
+          url1: 'https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_square1.png?raw=true',
+          url2: 'https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_square2.png?raw=true'
+        },
+        {
+          name: 'Karina',
+          type: '生活型',
+          function: '健康提醒/日程安排/智能家居',
+          url1: 'https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_square1.png?raw=true',
+          url2: 'https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_square2.png?raw=true'
+        },
+        {
+          name: 'Vito',
+          type: '情感型',
+          function: '情感識別/心情分析/心靈支持',
+          url1: 'https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_square1.png?raw=true',
+          url2: 'https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_square2.png?raw=true'
+        }
+      ]
+
+      btnList.addEventListener('click',e=>{
+        
+        if(e.target.nodeName === 'BUTTON'){
+          e.preventDefault()
+          
+          productContent.style.opacity = '0';
+          productContent.classList.remove('fade-animation')  
+
+          setTimeout(()=>{
+            productContent.classList.add('fade-animation');  
+            productContent.style.opacity = '1';
+
+          }, 300)
+        
+          // 移除所有 active
+          btns.forEach(item=>{
+            item.classList.remove('active')
+          })
+
+          btnLeftArrow.classList.add('disabled')
+          btnRightArrow.classList.remove('disabled')
+          e.target.classList.add('active')
+
+          const index = robotData.findIndex(robot => robot.name === e.target.textContent);
+
+          productImg.style.backgroundImage = `url(${robotData[index].url1})`;
+          productContent.innerHTML = `<h2 class="fs-lg-64 fs-1 mb-lg-4 mb-0">${e.target.textContent}</h2>
+              <p class="mb-0 fw-bold">${robotData[index].type}</p>
+              <p class="mb-lg-3 mb-2">${robotData[index].function}</p>
+              <img src="../assets/images/line_end_arrow_notch.svg" class="long-arrow" alt="箭頭圖示">`;
+        }
+      })
+
+      // 左箭頭
+      btnLeftArrow.addEventListener('click',e=>{
+        e.preventDefault()
+
+        btnRightArrow.classList.remove('disabled')
+        btnLeftArrow.classList.add('disabled')
+
+        btns.forEach(item=>{
+          if(item.classList.contains('active')){
+            const index = robotData.findIndex(robot=> robot.name === item.textContent)
+            productImg.style.backgroundImage = `url(${robotData[index].url1})`;
+          }
+        })
+      })
+
+      // 右箭頭
+      btnRightArrow.addEventListener('click',e=>{
+        e.preventDefault()
+
+        btnLeftArrow.classList.remove('disabled')
+        btnRightArrow.classList.add('disabled')
+
+        btns.forEach(item=>{
+          if(item.classList.contains('active')){
+            const index = robotData.findIndex(robot=> robot.name === item.textContent);
+            productImg.style.backgroundImage = `url(${robotData[index].url2})`
+          }
+        })
+      })
+    </script>
   </body>
 </html>

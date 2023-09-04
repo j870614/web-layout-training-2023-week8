@@ -1,2 +1,9 @@
-// 老師說盡量拆成元件 不用語意化命名 ex：.oreder 
-// 因此pages有需要再新增
+.input-contact{
+    height: 40px !important;
+}
+
+@include media-breakpoint-up(lg) {
+    .input-contact{
+        height: 46px !important;
+    }
+}

@@ -5,13 +5,11 @@ import 'material-icons/iconfont/material-icons.css';
 // 載入 swiper
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
-
-
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     slidesPerView: 3,
     spaceBetween: 24,
-    // mousewheel: true,
+    mousewheel: true,
     loop: false,
 
     scrollbar: {
