@@ -6,6 +6,7 @@
 
 @import './base/base';
 @import './base/fontStyle';
+@import './mixins/bg-gradients';
 @import './utils/helpers';
 
 @import './components/button';
@@ -13,6 +14,7 @@
 @import './components/backgroundText';
 @import './components/swiper';
 @import './components/roundedLine';
+@import './components/nav';
 
 @import './layout/footer';
 @import './layout/header';

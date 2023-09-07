@@ -300,6 +300,7 @@ $cyans: (
 // scss-docs-start theme-color-variables
 // 客製化
 $primary:       #7000FF !default; // $blue !default; 
+$primary-dark:  #11002D;  // 深主色，安照設計稿表示的
 $secondary:     #380C7E !default; // $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -313,6 +314,7 @@ $dark:          $gray-900 !default;
 // 客製化
 $theme-colors: (
   "primary":    $primary, // 主色
+  "primary-dark": $primary-dark, // 深主色，安照設計稿表示的
   "secondary":  $secondary, // 副色 只有使用分享的方塊是這個顏色
   "success":    $success,
   "info":       $info,
