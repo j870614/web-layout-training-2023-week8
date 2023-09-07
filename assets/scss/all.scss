@@ -6,6 +6,7 @@
 
 @import './base/base';
 @import './base/fontStyle';
+@import './mixins/bg-gradients';
 @import './utils/helpers';
 
 @import './components/arrow';
@@ -15,6 +16,7 @@
 @import './components/roundedLine';
 @import './components/showProductImg';
 @import './components/swiper';
+@import './components/nav';
 
 @import './layout/footer';
 @import './layout/header';
