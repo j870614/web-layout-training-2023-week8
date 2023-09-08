@@ -1,5 +1,7 @@
 @import 'bootstrap/scss/functions';
+
 @import './utils/variables';
+@import './utils/custom-color'; // 顏色微調
 @import './utils/maps'; // 因為 util 檔案 有個 $utilities-border-colors 才安裝的 目前還沒用到
 @import './utils/utilities'; // 主要修改 文字響應式 
 @import 'bootstrap/scss/bootstrap';
@@ -7,6 +9,7 @@
 @import './base/base';
 @import './base/fontStyle';
 @import './mixins/bg-gradients';
+
 @import './utils/helpers';
 
 @import './components/arrow';
