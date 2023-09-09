@@ -1,0 +1,6 @@
+.nav-bg {
+  @include gradient-y($primary, $primary-dark);
+  @media (min-width: 992px) {
+    background-image: none;
+  }
+}

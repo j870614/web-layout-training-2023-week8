@@ -13,7 +13,27 @@
     background: radial-gradient($black 0%, #28085C 100%);
 }
 
+.bg-purple-to-black-x {
+    @include gradient-x($primary, $primary-dark)
+}
+
+.bg-black-to-purple-x {
+    @include gradient-x($primary-dark, $primary)
+}
+
+.bg-purple-to-black-y {
+    @include gradient-y($primary, $primary-dark)
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
 // 字重
+.fw-700 {
+    font-weight: 700;
+}
+
 .fw-900{
     font-weight: 900;
 }
@@ -38,4 +58,24 @@
         letter-spacing: 48px;
     }
 
+}
+
+.ls-15 {
+    letter-spacing: 15px;
+}
+
+.ls-20 {
+    letter-spacing: 20px;
+}
+
+.ls-25 {
+    letter-spacing: 25px;
+}
+
+.ls-80 {
+    letter-spacing: 80px;
+}
+
+.ls-90 {
+    letter-spacing: 90px;
 }
