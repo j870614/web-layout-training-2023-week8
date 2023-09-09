@@ -1,3 +1,9 @@
-.index-title {
-  font-size: 100px;
+.input-contact{
+    height: 40px !important;
+}
+
+@include media-breakpoint-up(lg) {
+    .input-contact{
+        height: 46px !important;
+    }
 }

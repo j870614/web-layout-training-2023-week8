@@ -1,0 +1,85 @@
+// 首頁第一個區塊
+.bg-primary-to-black-vertical{
+    background: linear-gradient(180deg, $primary 0%, #11002D 100%);
+} 
+// 左到右 首頁上方兩個section 裡面的長條 bar
+.bg-primary-to-black-horizontal{
+    background: linear-gradient(90deg, $primary 0%, #11002D 100%);
+} 
+.bg-black-to-purple-radial{
+    background: radial-gradient(#28085C 0%, $black 100%);
+}
+.bg-purple-to-black-radial{
+    background: radial-gradient($black 0%, #28085C 100%);
+}
+
+.bg-purple-to-black-x {
+    @include gradient-x($primary, $primary-dark)
+}
+
+.bg-black-to-purple-x {
+    @include gradient-x($primary-dark, $primary)
+}
+
+.bg-purple-to-black-y {
+    @include gradient-y($primary, $primary-dark)
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+// 字重
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-900{
+    font-weight: 900;
+}
+
+// 字距
+.ls-lg-48-sm-40{
+    letter-spacing: 40px;
+}
+
+.scroll-none{
+    overflow: hidden;
+}
+
+.bg-cover{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@include media-breakpoint-up(xl) {
+    // 字距
+    .ls-lg-48-sm-40{
+        letter-spacing: 48px;
+    }
+
+}
+
+.ls-10 {
+    letter-spacing: 10px;
+}
+
+.ls-15 {
+    letter-spacing: 15px;
+}
+
+.ls-20 {
+    letter-spacing: 20px;
+}
+
+.ls-25 {
+    letter-spacing: 25px;
+}
+
+.ls-80 {
+    letter-spacing: 80px;
+}
+
+.ls-90 {
+    letter-spacing: 90px;
+}

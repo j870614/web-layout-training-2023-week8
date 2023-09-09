@@ -1,24 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
-
-$primary: #AA0601;
-$secondary: #FBF2F2;
-$black: #000;
-$white: #fff;
-
-body {
-  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
-  line-height: 1.5;
+*, *::before, *::after{
+  line-height: 1.5 !important;
 }
 
-/* 全域 border box */
-*,*::before,*::after{
-  box-sizing: border-box;
-}
-
-/* RWD img css*/
 img{
   max-width: 100%;
   height: auto;
-  vertical-align: middle;
 }
 
+a {
+	text-decoration:none;
+  display: inline-block;
+  color: $black;  
+} 

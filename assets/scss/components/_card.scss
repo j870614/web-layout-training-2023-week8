@@ -1,0 +1,66 @@
+// 紫色白色的card
+.card-square{
+    height: 351px;
+    padding: 24px;
+}
+
+// 首頁區塊6 機器人
+.card-robot{
+    height: 406px;
+    .bg-mask{
+        background: rgba(0, 0, 0, 0.50);
+    }
+}
+
+// 產品頁-智能問答
+.card-bottom-line{
+    h3{
+        border-bottom: 2px solid $dark;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .card-square{
+        height: 416px;
+        padding: 40px;
+    }
+
+    .card-robot{
+        height: 876px;
+        .bg-mask{
+            background: $black;
+            transition: all .3s ease-in-out;
+        }
+        &:hover{
+            .bg-mask{
+                background: rgba(0, 0, 0, 0.50);
+            }
+        }
+    }
+
+    // 產品頁-智能問答
+    .card-bottom-line{
+        h3{
+            border-bottom: 2px solid transparent;
+
+            &::after{
+                content: "";
+                display: block;
+                background: transparent;
+                width: 1%;
+                height: 2px;
+                transition: all .3s ease-in-out;
+            }
+        }
+
+        &:hover{
+            h3::after{
+                content: "";
+                display: block;
+                background: $dark;
+                width: 100%;
+                height: 2px;
+            }
+        }
+    }
+}
