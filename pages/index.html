@@ -11,9 +11,9 @@
     <%- include('./layout/header'); -%>
     <section class="pt-5 " style="background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-ai/home_background.png);">
       <div class="container-max">
-        <div class="row">
-          <div class="col-lg-3 align-self-end">
-            <p class="border-bottom border-white m-0">
+        <div class="row flex-column-reverse flex-lg-row">
+          <div class="col-lg-3 align-self-end d-none d-lg-block">
+            <p class="border-bottom border-white m-0 ">
               <a href="#" class="link-light ">最新消息！新版本 v15.4 釋出，搶先體驗！</a>
             </p>
           </div>
@@ -22,34 +22,45 @@
           </div>
           <div class="col-lg-3 d-flex flex-column justify-content-between ">
               <p class="text-white border-top border-white">ALPHABOX+ STUDIO</p>
-              <p class="text-primary-200 m-0">Copyright © 2023 Hexschool.</p>
+              <p class="text-primary-200 m-0 d-none d-lg-block">Copyright © 2023 Hexschool.</p>
           </div>
         </div>
+        <h2 class="d-lg-none mt-32 text-white text-center ls-20 ">ALPHABOX+</h2>
+            <p class="d-lg-none text-white text-center ls-15 mb-4">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
         <div class="row mt-5">
-          <div class="col-lg-3">
+          <div class="col-lg-3 mb-16 mb-lg-0">
             <div class="card bg-dark text-white">
-              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane.png?raw=true" class="card-img" alt="Diane">
+              <picture class="card-img">
+                <source srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true" media="(max-width: 767px)">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane.png?raw=true" alt="diane">
+              </picture>
               <div class="card-img-overlay">
                 <h3 class="card-title text-center">Diane</h3>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
-            <h2 class="text-white text-center ls-90">ALPHABOX+</h2>
-            <p class="text-white text-center ls-15 mb-4">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+            <h2 class="d-none d-lg-block text-white text-center ls-80">ALPHABOX+</h2>
+            <p class="d-none d-lg-block text-white text-center ls-15 mb-4">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
 
             <div class="row">
               <div class="col-lg-6">
-                <div class="card bg-dark text-white">
-                  <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix.png?raw=true" class="card-img" alt="Felix">
+                <div class="card bg-dark text-white mb-16 mb-lg-0">
+                  <picture class="card-img">
+                    <source srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_square1.png?raw=true" media="(max-width: 767px)">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix.png?raw=true" alt="Felix">
+                  </picture>
                   <div class="card-img-overlay">
                     <h3 class="card-title text-center">Felix</h3>
                   </div>
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="card bg-dark text-white">
-                  <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina.png?raw=true" class="card-img" alt="Karina">
+                <div class="card bg-dark text-white mb-16 mb-lg-0">
+                  <picture class="card-img">
+                    <source srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_square1.png?raw=true" media="(max-width: 767px)">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina.png?raw=true" alt="Karina">
+                  </picture>
                   <div class="card-img-overlay">
                     <h3 class="card-title text-center">Karina</h3>
                   </div>
@@ -58,8 +69,11 @@
             </div>
           </div>
           <div class="col-lg-3">
-            <div class="card bg-dark text-white">
-              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true" class="card-img" alt="Vito">
+            <div class="card bg-dark text-white mb-16 mb-lg-0">
+              <picture class="card-img">
+                <source srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_square1.png?raw=true" media="(max-width: 767px)">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true" alt="Vito">
+              </picture>
               <div class="card-img-overlay">
                 <h3 class="card-title text-center">Vito</h3>
               </div>
@@ -79,18 +93,21 @@
           </h2>
           <div class="d-flex justify-content-between align-items-center mt-48">
             <a href="#">
-              <img src="../assets/images/line_start_arrow_notch.png" class="h-25"  alt=" 左箭頭圖示">
+              <img src="../assets/images/line_start_arrow_notch.png" class="h-25 d-none d-lg-block"  alt=" 左箭頭圖示">
             </a>
             <div class="card bg-dark text-white">
-              <img src="../assets/images/carousel.png" class="card-img" alt="carousel">
-                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-end">
-                  <h3 class="card-title fs-96">01</h3>
-                  <h4 class="card-title fs-48">立體投影技術</h4>
+              <picture class="card-img">
+                <source srcset="../assets/images/carousel_mobile.png" media="(max-width: 767px)">
+                <img src="../assets/images/carousel.png" alt="carousel">
+              </picture>
+                <div class="card-img-overlay d-flex flex-column justify-content-end justify-content-lg-center align-items-lg-end">
+                  <h3 class="card-title fs-64 fs-lg-96">01</h3>
+                  <h4 class="card-title fs-24 fs-lg-32">立體投影技術</h4>
                   <p class="card-text">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
                 </div>
             </div>
             <a href="#">
-              <img class="h-25" src="../assets/images/line_end_arrow_notch.png"  alt="右箭頭圖示">
+              <img class="h-25 d-none d-lg-block" src="../assets/images/line_end_arrow_notch.png"  alt="右箭頭圖示">
             </a>
           </div>
           <div class="py-20 mt-32 bg-black-to-purple-x"></div>
@@ -98,6 +115,65 @@
       </div>
     </section>
     
+    <!-- 最新消息 -->
+    <section class="bg-black-to-purple-radial pt-60 pt-lg-160">
+      <div class="container">
+        <h2 class="text-white fs-lg-48 fs-40 mb-0 me-lg-214 fw-bold ls-25 mb-40 text-center text-lg-start">
+          最新消息
+        </h2>
+        <div class="text-white font-noto-sans py-lg-40 py-32 border-top border-white px-3">
+          <p class="m-0 d-flex align-items-center ls-15 fw-700">
+            <span class="material-symbols-outlined text-white pe-3">
+              emergency
+            </span>
+            2023.06.30
+          </p>
+          <h3 class="fs-5 ls-15 mb-12">產品升級公告</h3>
+          <div class="d-flex flex-column flex-lg-row">
+            <p class="m-0">榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！</p>
+            <img class="ms-lg-118 mt-12 mt-lg-0 w-25" src="../assets/images/line_end_arrow_notch.svg" alt="箭頭">
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-lg-row">
+          <div class="text-white font-noto-sans py-40 px-3 border-top border-bottom border-lg-end border-white">
+            <p class="m-0 d-flex align-items-center ls-15 fw-700">
+              <span class="material-symbols-outlined text-white pe-3">
+                emergency
+              </span>
+              2023.06.30
+            </p>
+            <h3 class="fs-5 ls-15 mb-12">限時優惠活動</h3>
+            <div class="d-flex flex-column">
+              <p class="m-0">為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！</p>
+              <img class="w-25 mt-lg-2 mt-12" src="../assets/images/line_end_arrow_notch.svg" alt="箭頭">
+            </div>
+          </div>
+
+          <div class="text-white font-noto-sans py-40 px-3 border-top border-bottom border-white">
+            <p class="m-0 d-flex align-items-center ls-15 fw-700">
+              <span class="material-symbols-outlined text-white pe-3">
+                emergency
+              </span>
+              2023.06.30
+            </p>
+            <h3 class="fs-5 ls-15 mb-12">新功能上線</h3>
+            <div class="d-flex flex-column">
+              <p class="m-0">為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。</p>
+              <img class="w-25 mt-lg-2 mt-12" src="../assets/images/line_end_arrow_notch.svg" alt="箭頭">
+            </div>
+          </div>
+        </div>
+      
+        <div class="d-flex justify-content-center mt-40 mt-lg-76 pb-80 pb-lg-0">
+          <a href="#">
+            <img src="../assets/images/circle2.png" alt="查看更多">
+          </a>
+        </div>
+        <p class="d-none d-lg-block text-white text-end mt-96 mb-0 pb-40">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
+      </div>
+    </section>
+
     <section class="scroll-none bg-purple-to-black-radial pt-lg-160 pb-lg-40 pt-60 pb-80 text-white position-relative">
       <div class="container">
         <div class="d-lg-flex align-items-center mb-3">

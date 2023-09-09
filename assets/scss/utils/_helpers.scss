@@ -30,6 +30,10 @@
 }
 
 // 字重
+.fw-700 {
+    font-weight: 700;
+}
+
 .fw-900{
     font-weight: 900;
 }
@@ -60,8 +64,16 @@
     letter-spacing: 15px;
 }
 
+.ls-20 {
+    letter-spacing: 20px;
+}
+
 .ls-25 {
     letter-spacing: 25px;
+}
+
+.ls-80 {
+    letter-spacing: 80px;
 }
 
 .ls-90 {

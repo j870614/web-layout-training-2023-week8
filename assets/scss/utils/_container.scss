@@ -2,3 +2,10 @@
   max-width: 1760px;
   margin: 0 auto;
 }
+
+@include media-breakpoint-down(md) {
+  .container-max {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
